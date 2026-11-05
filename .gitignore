@@ -1,0 +1,17 @@
+# Visual Studio & IDE temporary files
+.vs/
+.idea/
+*.user
+*.userprefs
+*.suo
+
+# Build Outputs & Compiled Binaries
+[Bb]in/
+[Oo]bj/
+*.dll
+*.pdb
+*.xml
+
+# OS Junk
+Thumbs.db
+Desktop.ini
