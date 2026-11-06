@@ -111,7 +111,7 @@ This repository is structured as a single Visual Studio mono-repository (`Tyrann
 2. Open `TyrannyMods.sln` in **Visual Studio 2022 or newer**.
 3. Target **Release | x64** and run **Build Solution**.
 4. Output binaries will automatically populate in the root `builds/` directory.
-**5. Alternatively, you can download already build up mods directly from the Releases section**.
+5. **5. Alternatively, you can download already build up mods directly from the Releases section**.
 
 ## License
 Distributed under the **MIT License**. See `LICENSE` for details.
