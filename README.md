@@ -61,7 +61,7 @@ Provides hotkeys and an interactive on-screen menu to adjust game speed on the f
   * Edit `BepInEx/config/tyranny.mod.timespeedcontrol.cfg` in any text editor.
   * Modify key names under the `[Hotkeys]` section using standard Unity key names.
 
-7. Weapon Mastery & Universal Riposte Rework
+### 7. Weapon Mastery & Universal Riposte Rework
 Rebalances weapon mastery damage passives, increases multi-hit probabilities, and removes weapon restrictions from Duelist passives to allow Riposte counter-attacks with any setup.
 
 **Features:**
