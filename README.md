@@ -5,56 +5,66 @@ A modular collection of Quality-of-Life (QoL), combat rebalance, and gameplay en
 ## Included Modules
 
 ### 1. AutoLooter
-- **Description:** Automatically loots containers and fallen enemies near your party directly into your stash without opening loot windows or interrupting exploration.
-- **Features:**
+Automatically loots containers and fallen enemies near your party directly into your stash without opening loot windows or interrupting exploration.
+
+**Features:**
   * Configurable loot radius around your character.
-  * Ignores locked containers until you open them.
+  * Ignores locked containers.
   * Pauses during combat, cutscenes, and loading screens.
 
 ### 2. FloatingXP
-- **Description:** Displays animated yellow floating text above character models whenever experience (XP) is gained.
-- **Features:**
+Displays animated yellow floating text above character models whenever experience (XP) is gained.
+
+**Features:**
   * Real-time visual feedback for party progression during combat and questing.
   * Fully customizable text format (e.g., `+50 XP`).
 
 ### 3. GlobalSpeedRework
-- **Description:** Overhauls combat pacing by dynamically scaling attack and spell casting speeds based on character attributes and skills.
-- **Features:**
+Overhauls combat pacing by dynamically scaling attack and spell casting speeds based on character attributes and skills.
+
+**Features:**
   * **Skill Scaling:** Grants **+2.5% attack/casting speed** per 10 points in the matching weapon or magic skill.
   * **Mage Scaling:** Spells and Songs scale speed off elemental magic skills or **50% of Lore** (whichever is higher).
   * **Quickness Bonus:** Adds **+1% speed** per point of Quickness above 10 (total speed multiplier capped at 1.0x–2.2x).
   * Enforces a safe recovery time floor to prevent instant attack loops.
 
 ### 4. NoPerRestAbilities
-- **Description:** Converts all rest-restricted abilities into per-encounter skills.
-- **Features:**
+Converts all rest-restricted abilities into per-encounter skills.
+
+**Features:**
   * Automatically resets ability charges and cooldowns at the end of every combat encounter.
-  * Eliminates the need for frequent resting during gameplay.
+  * Eliminates the need for frequent resting on large maps.
+  * Finally artifacts abilities feel useful instead of being saved all the time for a "hard battle"
 
 ### 5. SmallPartyXp
-- **Description:** Rebalances experience gains when playing with solo or small party.
-- **Features:**
+Rebalances experience gains when playing with solo or small party.
+
+**Features:**
   * Grants bonus XP for completing quest objectives and registering bestiary kills when running with fewer than 4 companions.
   * Default bonus is **+10% XP per missing slot** (up to +30% for solo play, configurable up to 50%).
   * Prints green notifications in the developer console when bonus XP is awarded.
 
 ### 6. SpeedOptions
-- **Description:** Provides hotkeys and an interactive on-screen menu to adjust game speed on the fly.
-- **Features:**
+Provides hotkeys and an interactive on-screen menu to adjust game speed on the fly.
+
+**Features:**
   * Draggable OSD window with a real-time speed slider and quick presets (`1.0x`, `1.5x`, `2.0x`, `Max`).
   * Automatically preserves game pause so combat pausing functions normally.
-- **Default Hotkeys:**
+
+**Default Hotkeys:**
   * `Keypad +` : Increase game speed (by 0.25x steps)
   * `Keypad -` : Decrease game speed (by 0.25x steps)
   * `Keypad *` : Toggle instantly between normal speed (`1.0x`) and maximum speed (`4.0x`)
   * `Keypad /` : Show or hide the speed control menu
-- **Changing Hotkeys:**
+
+**Changing Hotkeys:**
   * Edit `BepInEx/config/tyranny.mod.timespeedcontrol.cfg` in any text editor.
   * Modify key names under the `[Hotkeys]` section using standard Unity key names.
 
-### 7. Weapon Mastery & Universal Riposte Rework
-- **Description:** Rebalances weapon mastery damage passives, increases multi-hit probabilities, and removes weapon restrictions from Duelist passives to allow Riposte counter-attacks with any setup.
-- **Features:**
+7. Weapon Mastery & Universal Riposte Rework
+Rebalances weapon mastery damage passives, increases multi-hit probabilities, and removes weapon restrictions from Duelist passives to allow Riposte counter-attacks with any setup.
+
+**Features:**
   * **Mastery Damage Scaling:** Standardizes damage bonuses for all weapon types:
     * **Tier 1:** +10% Damage
     * **Tier 2:** +20% Damage
@@ -98,10 +108,10 @@ This repository is structured as a single Visual Studio mono-repository (`Tyrann
    ```bash
    git clone https://github.com/Enryu/Tyranny-Mod-Collection.git
    ```
-2. Open `TyrannyMods.sln` in **Visual Studio 2022 or newer** (or JetBrains Rider).
-3. Target **Release | x64** and run **Build Solution** (`Ctrl + Shift + B`).
+2. Open `TyrannyMods.sln` in **Visual Studio 2022 or newer**.
+3. Target **Release | x64** and run **Build Solution**.
 4. Output binaries will automatically populate in the root `builds/` directory.
-5. Alternatively, you can download ready-to-use compiled binaries directly from the [Releases](../../releases) section.
+**5. Alternatively, you can download already build up mods directly from the Releases section**.
 
 ## License
 Distributed under the **MIT License**. See `LICENSE` for details.
