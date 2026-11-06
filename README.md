@@ -8,9 +8,8 @@ A modular collection of Quality-of-Life (QoL), combat rebalance, and gameplay en
 - **Description:** Automatically loots containers and fallen enemies near your party directly into your stash without opening loot windows or interrupting exploration.
 - **Features:**
   * Configurable loot radius around your character.
-  * Ignores trapped containers until safely disarmed.
+  * Ignores locked containers until you open them.
   * Pauses during combat, cutscenes, and loading screens.
-  * Cleans up empty bodies by removing their highlight clutter.
 
 ### 2. FloatingXP
 - **Description:** Displays animated yellow floating text above character models whenever experience (XP) is gained.
@@ -30,10 +29,10 @@ A modular collection of Quality-of-Life (QoL), combat rebalance, and gameplay en
 - **Description:** Converts all rest-restricted abilities into per-encounter skills.
 - **Features:**
   * Automatically resets ability charges and cooldowns at the end of every combat encounter.
-  * Eliminates the need for frequent resting during dungeon exploration.
+  * Eliminates the need for frequent resting during gameplay.
 
 ### 5. SmallPartyXp
-- **Description:** Rebalances experience gains when playing with solo or small party compositions.
+- **Description:** Rebalances experience gains when playing with solo or small party.
 - **Features:**
   * Grants bonus XP for completing quest objectives and registering bestiary kills when running with fewer than 4 companions.
   * Default bonus is **+10% XP per missing slot** (up to +30% for solo play, configurable up to 50%).
@@ -51,10 +50,10 @@ A modular collection of Quality-of-Life (QoL), combat rebalance, and gameplay en
   * `Keypad /` : Show or hide the speed control menu
 - **Changing Hotkeys:**
   * Edit `BepInEx/config/tyranny.mod.timespeedcontrol.cfg` in any text editor.
-  * Modify key names under the `[Hotkeys]` section using standard Unity key names (e.g., `KeypadPlus`, `F5`, `LeftControl+KeypadPlus`).
+  * Modify key names under the `[Hotkeys]` section using standard Unity key names.
 
 ### 7. Weapon Mastery & Universal Riposte Rework
-- **Description:** Rebalances weapon mastery damage passives, fixes multi-hit probabilities, and removes weapon restrictions from Duelist passives to allow Riposte counter-attacks with any setup.
+- **Description:** Rebalances weapon mastery damage passives, increases multi-hit probabilities, and removes weapon restrictions from Duelist passives to allow Riposte counter-attacks with any setup.
 - **Features:**
   * **Mastery Damage Scaling:** Standardizes damage bonuses for all weapon types:
     * **Tier 1:** +10% Damage
@@ -73,12 +72,12 @@ A modular collection of Quality-of-Life (QoL), combat rebalance, and gameplay en
 
 ## Requirements
 - **Tyranny** (Latest official x64 version)
-- **BepInEx v5.x** (x64 release)
+- **BepInEx v5.x** (x64 release) or simply download from Nexus mods BepInEx for Tyranny 
 
 ## Installation
-1. Download and extract **BepInEx v5.x** into your main *Tyranny* game directory (where `Tyranny.exe` is located).
-2. Download the pre-built mod DLL files from [Releases](../../releases) or Nexus Mods.
-3. Place the desired `.dll` files into `Tyranny/BepInEx/plugins/`.
+1. Download and extract **BepInEx v5.x** into your main *Tyranny* game directory.
+2. Download the pre-built mod DLL files from Releases or Nexus Mods.
+3. Place the desired mods into `Tyranny/BepInEx/plugins/`.
 4. Launch the game (*Note: ensure you are launching the x64 executable*). Configuration files (`.cfg`) will automatically generate in `Tyranny/BepInEx/config/`.
 
 ## Configuration
@@ -92,7 +91,7 @@ Modules that support custom settings create their configuration files upon first
 
 *(Note: `GlobalSpeedRework` operates with hardcoded balance values and does not generate a `.cfg` file).*
 
-## Developer Info & Building from Source
+## Building from Source
 This repository is structured as a single Visual Studio mono-repository (`TyrannyMods.sln`).
 
 1. Clone the repo:
